@@ -2,8 +2,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 
+    width: 100%;
     max-height: 8.6rem;
 }
 
@@ -24,21 +24,20 @@ header {
     background-color: transparent;
 }
 
-.landing-toggle-theme-button {
+.header-toggle-theme-button {
     margin-right: 1rem;
     width: 1.8rem;
     height: 1.8rem;
 }
 
-.landing-go-home-logo-button {
+.header-go-home-logo-button {
     margin: 3rem 0 1rem 0;
-
     width: 5rem;
     height: 3.5rem;
 }
 
-.landing-back-home-button {
-    margin-left: 1rem;
+.header-back-home-button {
     width: 1.8rem;
     height: 1.8rem;
+    margin-left: 1rem;
 }

@@ -12,5 +12,31 @@
 }
 
 .landing-body {
-    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    height: calc(100vh - 7.5rem);
+}
+
+.landing-go-home-logo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 7.5rem;
+    height: 6.7rem;
+    width: 6.7rem;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0px 1px 4px 0px var(--box-shadow-button);
+}
+
+.landing-go-home-logo-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 6px 0px var(--box-shadow-button-hover);
+}
+
+.landing-go-home-logo-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 1px 4px 0px var(--box-shadow-button-active);
 }

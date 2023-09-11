@@ -3,11 +3,20 @@
 
   --primary-bg-color: #FDFDFD;
   --primary-text-color: #1D1F2E;
+  --secondary-bg-color: #292B3A;
+
+  --box-shadow-button: rgba(0, 0, 0, 0.18);
+  --box-shadow-button-hover: rgba(0, 0, 0, 0.31);
+  --box-shadow-button-active: rgba(0, 0, 0, 0.25);
 }
 
 [data-theme='dark'] {
   --primary-bg-color: #1D1F2E;
   --primary-text-color: #FFFFFF;
+
+  --box-shadow-button: rgba(255, 255, 255, 0.25);
+  --box-shadow-button-hover: rgba(255, 255, 255, 0.3);
+  --box-shadow-button-active: rgba(255, 255, 255, 0.2);
 }
 
 * {

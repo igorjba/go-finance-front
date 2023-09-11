@@ -25,13 +25,13 @@ const Header: React.FC = () => {
     return (
         <header >
             <div className="header-container">
-                <button className={`landing-back-home-button ${isHomePage ? '' : 'hidden'}`} onClick={goToHome}>
+                <button className={`header-back-home-button ${isHomePage || isRootPath ? 'hidden' : ''}`} onClick={goToHome}>
                     <img src={arrowIcon} alt="Back Home Button" />
                 </button>
-                <button className={`landing-go-home-logo-button ${isRootPath ? 'hidden' : ''}`} onClick={goToHome}>
+                <button className={`header-go-home-logo-button ${isRootPath ? 'hidden' : ''}`} onClick={goToHome}>
                     <img src={currentLogoIcon} alt="Go Home Button" />
                 </button>
-                <button className="landing-toggle-theme-button" onClick={toggleTheme}>
+                <button className="header-toggle-theme-button" onClick={toggleTheme}>
                     <img src={currentModeIcon} alt="Toggle Theme" />
                 </button>
             </div>
