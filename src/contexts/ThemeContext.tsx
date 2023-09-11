@@ -1,9 +1,20 @@
-import { useEffect, useState } from 'react';
+import React, { createContext, useState, useEffect, ReactNode } from "react";
 import { getItem, setItem } from '../utils/localStorage';
 
 export type Theme = 'light' | 'dark';
 
-export function useDarkMode(): [Theme, () => void] {
+interface ThemeContextProps {
+    theme: Theme;
+    toggleTheme: () => void;
+}
+
+const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
+
+interface ThemeProviderProps {
+    children: ReactNode;
+}
+
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const storedTheme = getItem('theme');
     const initialTheme: Theme = storedTheme === 'dark' ? 'dark' : 'light';
 
@@ -29,5 +40,11 @@ export function useDarkMode(): [Theme, () => void] {
         }
     }, []);
 
-    return [theme, toggleTheme];
+    return (
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            {children}
+        </ThemeContext.Provider>
+    );
 }
+
+export default ThemeContext;

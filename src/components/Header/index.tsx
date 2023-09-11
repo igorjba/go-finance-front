@@ -3,13 +3,13 @@ import darkLogoIcon from "../../assets/dark-logo.svg";
 import darkModeIcon from "../../assets/dark-mode.svg";
 import lightLogoIcon from "../../assets/light-logo.svg";
 import lightModeIcon from "../../assets/light-mode.svg";
-import { useDarkMode } from "../../hooks/useDarkMode";
+import { useTheme } from "../../hooks/useTheme";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../../global/global.css"
 import "./style.css";
 
 export default function Header() {
-    const [theme, toggleTheme] = useDarkMode();
+    const { theme, toggleTheme } = useTheme();
     const navigate = useNavigate();
     const location = useLocation();
 
