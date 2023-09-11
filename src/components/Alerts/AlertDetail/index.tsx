@@ -1,8 +1,10 @@
 import "./style.css";
 
-export default function AlertDetail() {
+const AlertDetail: React.FC = () => {
     return (
         <div className="container">
         </div>
     );
 }
+
+export default AlertDetail;

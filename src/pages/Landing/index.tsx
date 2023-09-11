@@ -7,13 +7,12 @@ import "../../global/global.css";
 import { useTheme } from "../../hooks/useTheme";
 import "./style.css";
 
-export default function Landing() {
+const Landing: React.FC = () => {
   const { theme } = useTheme();
   const navigate = useNavigate()
   const [currentLogoIcon, setCurrentLogoIcon] = useState(theme === 'light' ? darkLogoIcon : lightLogoIcon);
 
   useEffect(() => {
-    console.log(`O tema atual é: ${theme}`);
     setCurrentLogoIcon(theme === 'light' ? darkLogoIcon : lightLogoIcon);
   }, [theme]);
 
@@ -32,3 +31,4 @@ export default function Landing() {
     </div>
   );
 }
+export default Landing;

@@ -3,7 +3,7 @@ import { getItem, setItem } from '../utils/localStorage';
 
 export type Theme = 'light' | 'dark';
 
-interface ThemeContextProps {
+export interface ThemeContextProps {
     theme: Theme;
     toggleTheme: () => void;
 }

@@ -1,8 +1,10 @@
 import "./style.css";
 
-export default function EditAlert() {
+const EditAlert: React.FC = () => {
     return (
         <div className="container">
         </div>
     );
 }
+
+export default EditAlert;

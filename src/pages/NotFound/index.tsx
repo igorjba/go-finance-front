@@ -1,9 +1,11 @@
 import "./style.css";
 
-export default function NotFound() {
+const NotFound: React.FC = () => {
     return (
         <div className="container">
             Not Found
         </div>
     );
 }
+
+export default NotFound;

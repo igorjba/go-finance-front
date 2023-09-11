@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { AlertProvider } from "../contexts/AlertContext";
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -6,7 +5,7 @@ import Home from "../pages/Home";
 import Landing from "../pages/Landing";
 import NotFound from "../pages/NotFound";
 
-export default function AppRoutes() {
+const AppRoutes: React.FC = () => {
     return (
         <Router>
             <ThemeProvider>
@@ -21,3 +20,5 @@ export default function AppRoutes() {
         </Router>
     );
 };
+
+export default AppRoutes;

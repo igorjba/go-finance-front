@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import "./style.css";
 
-export default function Home() {
+const Home: React.FC = () => {
     return (
         <div className="home-container">
             <Header />
@@ -12,3 +12,4 @@ export default function Home() {
         </div>
     );
 }
+export default Home;

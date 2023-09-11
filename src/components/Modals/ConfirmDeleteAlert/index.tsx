@@ -1,8 +1,10 @@
 import "./style.css";
 
-export default function ConfirmDeleteAlert() {
+const ConfirmDeleteAlert: React.FC = () => {
     return (
         <div className="container">
         </div>
     );
 }
+
+export default ConfirmDeleteAlert;

@@ -8,7 +8,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "../../global/global.css"
 import "./style.css";
 
-export default function Header() {
+const Header: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
     const navigate = useNavigate();
     const location = useLocation();
@@ -38,3 +38,5 @@ export default function Header() {
         </header>
     );
 }
+
+export default Header;
