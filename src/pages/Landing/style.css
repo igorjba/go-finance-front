@@ -1,0 +1,16 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.landing-body {
+    height: 100vh;
+}

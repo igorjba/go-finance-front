@@ -20,3 +20,7 @@ html {
   font-size: 62.5%;
   font-family: var(--ff-ubuntu);
 }
+
+.hidden {
+  visibility: hidden;
+}
